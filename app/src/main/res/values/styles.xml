@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="btnStyle">
+        <item name="android:layout_width">@dimen/btn_size</item>
+        <item name="android:layout_height">@dimen/btn_size</item>
+        <item name="android:background">@drawable/square_btn</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">#FFFF00</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+</resources>

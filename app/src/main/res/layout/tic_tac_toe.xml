@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:stretchColumns="0,1,2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1_1"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn1_2"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn1_3"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn2_1"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn2_2"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn2_3"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn3_1"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn3_2"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn3_3"
+                style="@style/btnStyle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tictactoe_title"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/tictactoe_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textIsSelectable="false"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tictactoe_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/tictactoe_next_player"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tictactoe_title" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="178dp"
+        android:layout_height="67dp"
+        android:text="@string/tictactoe_new_game"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tictactoe_subtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
